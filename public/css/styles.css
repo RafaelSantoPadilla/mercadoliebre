@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gris-Claro);
+}
+
+a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*    ****Header****/
+header {
+    background-color: var(--amarillo);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container {
+    display: none;
+}
+
+.burger-container {
+    display: flex;
+    justify-content: center;
+}
+div.logo-bar-container{
+    display: flex;
+}
+
+.card-container{
+    padding: 15px;
+}
+.search-button-container{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 50%;
+    padding: 10px;
+}
+.search-container{
+    display: flex;
+    height: 25px;
+    width: 90%;   
+}
+.search-container{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Roboto';
+}
+.card-title  {
+    margin-right: 10px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+.card-title i{
+    margin-right: 10px;    
+}
+
+input{
+    width: 95%;
+    border: none;
+    background-color: var(--blanco);
+    border-radius: 5px 0 0 5px;
+}
+button{
+    width: 15%;
+    padding: 1px;
+    border: none;
+    background-color: var(--blanco);
+    border-radius: 0 5px 5px 0;
+}
+
+
+.burger-menu{
+width: 40px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5px;
+border-radius: 5px;
+color: var(--blanco);
+background-color: var(--azul);
+}
+
+/*Fin de header*/
+
+/* ****Inicio de main**** */
+
+main{
+    background-color: var(--grisClaro);
+    height: 90%;
+    padding: 10px;
+}
+h3.title {
+    text-align: center;
+    font-size: 25px;
+}
+.price {
+    font-size: 18px;
+    color: var(--negro);
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.discount {
+    color: var(--verde);
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: var(--grisOscuro);
+display: none;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.fa-truck:before {
+    color: var(--verde);
+    font-size: 16px;
+}
+div.main-article {
+    border-top: 1px solid;
+    color: var(--grisClaro);
+    margin: 1px;
+    padding: 0;
+    background-color: var(--blanco);
+    margin-bottom: 10px;
+    position: relative;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-article .fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    background-color: var(--blanco);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+section .productos>article>img {
+    width: 100%;
+    object-fit: cover;
+}
+article img {
+    width: 100%;
+    object-fit: contain;
+}
+/* ***Fin de main***  */
+
+/* ****Inicio de Footer**** */
+
+.fa-user-shield:before,
+.fa-credit-card:before,
+.fa-gift:before {
+    color: var(--celeste);
+    font-size: 30px;
+}
+
+footer {
+    background-color: var(--blanco);
+
+    height: 90%;
+}
+div.icon {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.element {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.text1{text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.text2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.copyright {
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+/*  ***Fin de footer***  */
+
+
+
+
+
+
+
+
+

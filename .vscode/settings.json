@@ -1,0 +1,8 @@
+{
+    "editor.guides.bracketPairs": "active",
+    "prettier.bracketSpacing": false,
+    "prettier.enable": false,
+    "prettier.embeddedLanguageFormatting": "off",
+    "prettier.semi": false,
+    "prettier.useEditorConfig": false
+}
