@@ -21,6 +21,7 @@ ul {
 img {
     width: 100%;
 }
+
 html {
     font-family: 'Roboto', sans-serif;
 }
@@ -45,60 +46,69 @@ header {
     display: flex;
     justify-content: center;
 }
-div.logo-bar-container{
+
+div.logo-bar-container {
     display: flex;
 }
 
-.card-container{
+.card-container {
     padding: 15px;
 }
-.search-button-container{
+
+.search-button-container {
     display: flex;
     width: 50%;
     align-items: center;
     justify-content: center;
 }
 
-.logo{
+.logo {
     width: 50%;
     padding: 10px;
 }
-.search-container{
+
+.search-container {
     display: flex;
     height: 25px;
-    width: 90%;   
+    width: 90%;
 }
-.search-container{
+
+.search-container {
     font-weight: 400;
     text-align: center;
     font-family: 'Roboto';
 }
-.card-title  {
+
+.card-title {
     margin-right: 10px;
     font-weight: 400;
     text-align: center;
     font-family: 'Roboto';
     font-size: 12px;
 }
-.card-title i{
-    margin-right: 10px;    
+
+.card-title i {
+    margin-right: 10px;
 }
 
-.search{
+.search {
     width: 95%;
     border: none;
     background-color: var(--blanco);
     border-radius: 5px 0 0 5px;
 }
-input{
+
+input.barra {
     width: 95%;
     border: none;
     background-color: var(--blanco);
     border-radius: 5px 0 0 5px;
     margin-left: 3px;
     margin-top: 3px;
+    padding: 0;
 }
-button{
+
+button {
     width: 15%;
     padding: 1px;
     border: none;
@@ -106,32 +116,60 @@ button{
     border-radius: 0 5px 5px 0;
 }
 
-.burger-menu{
-width: 40px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 5px;
-border-radius: 5px;
-color: var(--blanco);
-background-color: var(--azul);
+.burger-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    color: var(--blanco);
+    background-color: var(--azul);
 }
 
 /*Fin de header*/
 
 /* ****Inicio de main**** */
-main{
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+main {
     background-color: var(--grisClaro);
     height: 90%;
     padding: 10px;
 }
-form.loguin {
+
+form.login {
     display: flex;
     flex-wrap: wrap;
     width: 75%;
     justify-content: center;
     margin-left: 40px;
+}
+
+form.login {
+    background-color: var(--blanco);
+}
+
+
+input {
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 1em;
+    padding-right: 25px;
+    border-radius: 2px;
+    border: 1px solid var(--grisOscuro);
+    outline: none;
+    background-color: var(--grisClaro);
+}
+.form-container {
+    width: 75%;
+    margin: auto;
 }
 
 .email {
@@ -144,7 +182,6 @@ form.loguin {
     align-content: center;
     margin-left: 10%;
 }
-
 .password {
     display: flex;
     flex-wrap: wrap;
@@ -153,34 +190,113 @@ form.loguin {
     padding-bottom: 5px;
     align-items: stretch;
     align-content: center;
-    margin-left: 10%;
+    margin: auto;
 }
+
+
 
 .button-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 75%;
 }
+
 .button-one {
+    height: 35px;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 70%;
     justify-content: center;
+    margin-bottom: 10px;
+
 }
+
 button.one {
-    width: 50px;
-    height: 30px;
+    width: 80%;
+    background-color: var(--grisClaro);
+    border-radius: 5px;
+    border: 1px solid var(--grisOscuro);
+}
+button.one:hover{
+    background-color: var(--azulRey);
+    transition: 450ms;
+    color: var(--blanco);
+}
+.acceder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+p.acceso {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 12px;
+}
+a.recuperar {
+    text-align: center;
+    font-size: 14px;
+    text-decoration: revert;
+    color: var(--celeste);
+}
+a.register {
+    display: flex;
+    text-decoration: revert;
+    color: var(--celeste);
+    font-size: 12px;
+    padding-left: 10px;
+}
+.recuperar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+form.login:hover{
+    box-shadow: 0px 0px 30px var(--negro);
 }
 
 /* ***Fin de main***  */
 
 /* ****Inicio de Footer**** */
 
-.fa-user-shield:before,
-.fa-credit-card:before,
-.fa-gift:before {
+i.fa-solid.fa-credit-card {
     color: var(--celeste);
     font-size: 30px;
+}
+
+i.fa-solid.fa-gift {
+    color: var(--celeste);
+    font-size: 30px;
+}
+
+i.fa-solid.fa-user-shield.fa-fw {
+    color: var(--celeste);
+    font-size: 30px;
+}
+
+.container1:hover i.fa-solid.fa-credit-card {
+    color: var(--amarillo);
+    cursor: pointer;
+    transition: all 400ms ease-out;
+    object-fit: contain;
+}
+
+.container1:hover i.fa-solid.fa-gift {
+    color: var(--amarillo);
+    cursor: pointer;
+    transition: all 400ms ease-out;
+    object-fit: contain;
+}
+
+.container1:hover i.fa-solid.fa-user-shield.fa-fw {
+    color: var(--amarillo);
+    cursor: pointer;
+    transition: all 400ms ease-out;
+    object-fit: contain;
 }
 
 footer {
@@ -188,6 +304,7 @@ footer {
 
     height: 90%;
 }
+
 div.icon {
     text-align: center;
     display: flex;
@@ -203,28 +320,33 @@ div.icon {
     flex-wrap: wrap;
     padding: 10px;
 }
+
 .container1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
 }
+
 p {
     text-align: center;
 }
 
-.text1{text-align: center;
+.text1 {
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     font-size: 16px;
 }
+
 .text2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .copyright {
     display: flex;
     align-content: flex-end;

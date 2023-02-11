@@ -27,7 +27,7 @@
                 </div>
                 <div class="search-button-container">
                     <div class="search-container">
-                        <div class="search"> <input type="text" placeholder="buscar productos, marcas..."></div>
+                        <div class="search"> <input class="barra" type="text" placeholder="buscar productos, marcas..."></div>
                         <button><i class="fas fa-search"></i> </button>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
             </ul>
             <ul>
                 <li><a href="/register">Crea tu cuenta <i class="fas fa-id-card"></i></a> </i></li>
-                <li><a href="/loguin">Ingresa <i class="fas fa-sign-in-alt"></i></a> </i></li>
+                <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a> </i></li>
                 <li> Mis compras <i class="fas fa-shopping-basket"></i></li>
             </ul>
         </div>
@@ -60,12 +60,14 @@
         <img src="images/img-home-banner.jpg">
     </div>
     <main>
+        <h1>Registrate</h1>
         <form class="register" action="/register" method="POST">
-            <div class="name"> <label for="nombre"></label>
-                <input type="text" name="usuario" placeholder="Nombre y Apellido">
+            <div class="form-container">
+                <input type="text" required placeholder="Nombre y Apellidos" pattern="^[A-Za-z ]*$">
             </div>
-            <div class="email"> <label for="email"></label>
-                <input type="email" name="email" placeholder="Email">
+            <div class="form-container">
+                <input type="email" required placeholder="Email"
+                    pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
             </div>
 
             <div class="title">
@@ -73,9 +75,8 @@
             </div>
             <div class="date"><input type="date" name="fecha"></div>
 
-
-            <div class="domicilio"> <label for="domicilio"></label>
-                <input type="text" name="domicilio" placeholder="Domicilio">
+            <div class="form-container">
+            <input type="text" required placeholder="Domicilio" pattern="^[A-Za-z ]*$">
             </div>
 
             <div class="title">
@@ -96,7 +97,7 @@
                 <label class="container">
                     <input type="checkbox" name="intereses" value="Electro">
                     <h3 class="int">Electro</h3>
-                </label >
+                </label>
                 <label class="container">
                     <input type="checkbox" name="intereses" value="Moda">
                     <h3 class="int">Moda</h3>
@@ -118,13 +119,15 @@
             <div class="profile"><input type="file" name="avatar" accept=".jpg .png" multiple></div>
 
             <div class="password"> <label for="password"></label>
-            <input type="password" name="clave" placeholder="Contraseña"></div>
+                <input type="password" name="pass"  placeholder="Contraseña" id="pass" pattern="[A-Za-z0-9!?-]{8,12}" required/>
+            </div>
             <div class="password"> <label for="password"></label>
-            <input type="password" name="clave" placeholder="Confirmar Contraseña"></div>
-<div class="button-container">
-            <div class="button-one"><button class="one" type="submit">Enviar</button></div>
-            <div class="button-one"><button class="one" type="reset">Borrar</button></div>
-        </div>
+                <input type="password" name="pass"  placeholder="Confirmar Contraseña" id="pass" pattern="[A-Za-z0-9!?-]{8,12}" required/>
+            </div>
+            <div class="button-container">
+                <div class="button-one"><button class="one" type="submit">Enviar</button></div>
+                <div class="button-one"><button class="one" type="reset">Borrar</button></div>
+            </div>
         </form>
     </main>
     <footer>

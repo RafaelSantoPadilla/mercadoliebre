@@ -32,34 +32,16 @@ ul{
 }
 /*fin de header*/
 /***inicio de main***/
-div.main.main-article {
-    box-shadow: 0px 0px 10px rgb (100, 100, 100);
-}
-div.main-article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-}
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-}
-.descripcion {
-    font-size: 16px;
-    color: var(--grisOscuro);
-    display: flex;
-}
-p.descripcion {
-    padding-left: 17px;
 
+form.register {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: center;
+   margin: auto;
 }
-article {
-    height: auto;
-    width: 50%;
-    padding-right: 8px;
-    align-items: center;
-}
+
+
 /****fin de main****/
 
 }
@@ -103,7 +85,7 @@ form.register {
     flex-wrap: wrap;
     width: 75%;
     justify-content: center;
-    margin-left: 60px;
+   margin: auto;
 }
 button.one {
     width: 100px;

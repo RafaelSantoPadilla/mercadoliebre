@@ -27,7 +27,7 @@
                 </div>
                 <div class="search-button-container">
                     <div class="search-container">
-                        <div class="search"> <input type="text" placeholder="buscar productos, marcas..."></div>
+                        <div class="search"> <input type="text" class="barra" placeholder="buscar productos, marcas..."></div>
                         <button><i class="fas fa-search"></i> </button>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
             </ul>
             <ul>
                 <li><a href="/register">Crea tu cuenta <i class="fas fa-id-card"></i></a> </i></li>
-                <li><a href="/loguin">Ingresa <i class="fas fa-sign-in-alt"></i></a> </i></li>
+                <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a> </i></li>
                 <li> Mis compras <i class="fas fa-shopping-basket"></i></li>
             </ul>
         </div>
@@ -60,16 +60,20 @@
         <img src="images/img-home-banner.jpg">
     </div>
     <main>
-        <form class="loguin" action="/loguin" method="POST">
-            <div class="email"> <label for="email"></label>
-                <input type="email" name="email" placeholder="Email">
+        <h1>Inicia sesión</h1>
+        <form class="login" action="/login" method="POST">
+            <div class="form-container">
+                <input type="email" required placeholder="Email"
+                    pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
             </div>
-
             <div class="password"> <label for="password"></label>
-            <input type="password" name="clave" placeholder="Elegi contraseña"></div>
-<div class="button-container">
-            <div class="button-one"><button class="one" type="submit">Enviar</button></div>
-        </div>
+                <input type="password" name="pass"  placeholder="Contraseña" id="pass" pattern="[A-Za-z0-9!?-]{8,12}" required/>
+            </div>
+            <div class="button-container">
+                <div class="button-one"><button class="one" type="submit">Iniciar sesión</button></div>
+            </div>
+           <div class="acceder"> <p class="acceso">No tienes una cuenta</p> <a href="/register" class="register"> Registrate aqui</a> </div>
+           <div class="recuperar"><a href="/" class="recuperar">Olvidaste Tu Contraseña</a></div>
         </form>
     </main>
     <footer>
